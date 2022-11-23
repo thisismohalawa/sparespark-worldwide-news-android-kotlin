@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/matchMatch_">
+
+    <RelativeLayout style="@style/matchMatch_">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/blue_dark"
+            android:padding="@dimen/_10sdp"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="@color/dark_gray">
+
+            <com.google.android.material.tabs.TabItem
+                style="@style/wrapWrap_"
+                android:text="@string/a" />
+
+            <com.google.android.material.tabs.TabItem
+                style="@style/wrapWrap_"
+                android:text="@string/b" />
+
+            <com.google.android.material.tabs.TabItem
+                style="@style/wrapWrap_"
+                android:text="@string/c" />
+
+            <com.google.android.material.tabs.TabItem
+                style="@style/wrapWrap_"
+                android:text="@string/d" />
+
+            <com.google.android.material.tabs.TabItem
+                style="@style/wrapWrap_"
+                android:text="@string/e" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            style="@style/matchMatch_"
+            android:layout_below="@id/tabLayout" />
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

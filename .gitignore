@@ -13,3 +13,10 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+/app/src/main/java/sparespark/worldwide/news/core/Secret.kt
+/app/src/main/java/sparespark/worldwide/news/data/db
+/app/src/main/java/sparespark/worldwide/news/data/provider/countrycodes
+/app/src/main/java/sparespark/worldwide/news/data/network/datasource
+/app/src/main/java/sparespark/worldwide/news/data/network/response
+/app/src/main/java/sparespark/worldwide/news/ui/articlelist/ArticleListView.kt

@@ -2,11 +2,23 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/articleListView">
-
+    app:startDestination="@id/articleContainerView">
 
     <fragment
-        android:id="@+id/articleListView"
-        android:name="sparespark.worldwide.news.ArticleListView"
-        android:label="ArticleListView" />
+        android:id="@+id/articleContainerView"
+        android:name="sparespark.worldwide.news.ui.articlelist.ArticleContainerView"
+        android:label="ArticleContainerView">
+        <action
+            android:id="@+id/toArticleDetail"
+            app:destination="@id/articleDetail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/articleDetail"
+        android:name="sparespark.worldwide.news.ui.articledetail.ArticleDetailView"
+        android:label="ArticleDetail">
+        <argument
+            android:name="article"
+            app:argType="sparespark.worldwide.news.data.db.dao.ArticleEntry" />
+    </fragment>
 </navigation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        style="@style/matchMatch_"
+        tools:context=".ui.ArticlesActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/blue_dark"
+            android:gravity="center"
+            app:title="@string/toolbar_title"
+            app:titleTextColor="@android:color/white" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_container"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            style="@style/matchMatch_"
+            android:layout_below="@+id/toolBar"
+            android:layout_centerInParent="true"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph" />
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            style="@style/progress_"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</layout>
